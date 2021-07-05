@@ -20,18 +20,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnSubmit.setOnClickListener(this);
 
         TextView etName = findViewById(R.id.et_name);
-
-        btnSubmit.setOnClickListener(v ->  {
-            Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-            intent.putExtra("name", etName.getText().toString());
-            startActivity(intent);
-        });
     }
 
     @Override
     public void onClick(View v) {
+        Button btnSubmit = findViewById(R.id.btn_submit);
+        btnSubmit.setOnClickListener(this);
+
+        TextView etName = findViewById(R.id.et_name);
+
         if (v.getId() == R.id.btn_submit) {
-            Toast.makeText(MainActivity.this, "Submit Accepted", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Please Press Again", Toast.LENGTH_SHORT).show();
+
+            btnSubmit.setOnClickListener(view ->  {
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                intent.putExtra("name", etName.getText().toString());
+                startActivity(intent);
+            });
         }
     }
 

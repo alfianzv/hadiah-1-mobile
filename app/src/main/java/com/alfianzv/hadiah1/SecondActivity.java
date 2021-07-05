@@ -17,5 +17,6 @@ public class SecondActivity extends AppCompatActivity {
 
         TextView tvWelcome = findViewById(R.id.tv_welcome);
         tvWelcome.setText(name);
+
     }
 }
