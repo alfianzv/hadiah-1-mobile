@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:padding="20dp"
+    android:background="@color/blueOcean">
+
+    <TextView
+        android:id="@+id/tv_header_welcome"
+        style="@style/textStyle"
+        android:textSize="36dp"
+        android:text="@string/welcome_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        style="@style/textStyle"
+        android:textSize="36dp"
+        tools:text="Babang"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header_welcome"/>
+
+    <TextView
+        android:id="@+id/tv_breadcrumbs"
+        style="@style/textStyle"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/blueFaded"
+        android:textSize="20dp"
+        android:text="@string/your_water_will_arrive_in_approximately_2000_hours_yes_we_lied_about_the_30_minutes"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

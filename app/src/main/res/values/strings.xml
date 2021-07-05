@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Hadiah 1</string>
+    <string name="wwater">wwater</string>
+    <string name="water_delivery">Water Delivery</string>
+    <string name="we_deliver_water_at_any_point_of_the_earth_in_30_minutes">We deliver water at any point of the earth in 30 minutes</string>
+    <string name="submit">Submit</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="your_water_will_arrive_in_approximately_2000_hours_yes_we_lied_about_the_30_minutes">Your water will arrive in approximately 2000 Hours. Yes we lied about the 30 minutes</string>
+</resources>
