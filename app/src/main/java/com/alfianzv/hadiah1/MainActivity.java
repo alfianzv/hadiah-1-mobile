@@ -10,7 +10,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button btnViewDrink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,18 +21,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         TextView etName = findViewById(R.id.et_name);
 
-        btnViewDrink = (Button) findViewById(R.id.btn_view_drink);
-        btnViewDrink.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivity3();
-            }
-        });
-    }
+        Button btnViewDrink = findViewById(R.id.btn_view_drink);
 
-    public void openActivity3() {
-        Intent intent = new Intent(this, MainActivity3.class);
-        startActivity(intent);
+        btnViewDrink.setOnClickListener(v -> {
+            Intent intent = new Intent(this, MainActivity3.class);
+            startActivity(intent);
+        });
+
     }
 
     @Override
